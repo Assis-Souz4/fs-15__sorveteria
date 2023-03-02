@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -32,5 +33,57 @@
             </div>
         </div>
     </header>
+    <section class="carrossel">
+        <div class="carrossel__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./src/img/image1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./src/img/img2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./src/img/img3.jpg" alt=""></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#carousel-example-generic").on("slide.bs.carousel", function (event) {
+                $(".barra", this)
+                    .removeClass("anima").css("width", "0%");
+            }).on("slid.bs.carousel", function (event) {
+                $(".barra", this)
+                    .addClass("anima").css("width", "100%");
+            });
+            $(".barra", "#carousel-example-generic").css("width", "100%");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // const swiper = new Swiper('.swiper', {
+        //     speed: 400,
+        //     spaceBetween: 10,
+        //     slidesPerView: 1,
+        // });
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
+
 </html>

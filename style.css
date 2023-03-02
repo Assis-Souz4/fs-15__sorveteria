@@ -1,6 +1,5 @@
 @import url(./styles/header.css);
-
-
+@import url(./styles/carrossel.css);
 
 /* VARIAVEIS */
 :root{
@@ -13,7 +12,6 @@
     /* FONT */
 }
 body {
-    font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
   }

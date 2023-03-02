@@ -1,0 +1,17 @@
+.carrossel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0 0 0;
+}
+.carrossel__container{
+    width: 60%;
+}
+.swiper-slide img{
+    width: 100%;
+    border-radius: 5%;
+
+}
+.swiper-button-prev, .swiper-button-next, .swiper-scrollbar, .swiper-pagination{
+    display: none;
+}
