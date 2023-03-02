@@ -1,17 +1,21 @@
 @import url(./styles/header.css);
 @import url(./styles/carrossel.css);
+@import url(./styles/recomendacoes.css);
 
 /* VARIAVEIS */
 :root{
     /* COR */
+    --background-principal:#D9D9D9;
     --font-principal: font-family: 'Rubik';
-    --azul-dark:#01161E;
+    --dark-blue:#01161E;
     --branco:#fff;
     --azul-bebe:#BDE0FE;
     --rosa:#FFAFCC;
+    --azul:#598392;
     /* FONT */
 }
 body {
+    background-color: var(--background-principal);
     font-size: 16px;
     font-weight: 400;
   }

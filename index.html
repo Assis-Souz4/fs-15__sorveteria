@@ -46,7 +46,9 @@
                     ...
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -55,11 +57,48 @@
             </div>
         </div>
     </section>
-
-
-
-
-    <script type="text/javascript">
+    <section class="recomendacoes">
+        <h2 class="recomendacoes__titulo">Recomendações do Sorveteiro</h2>
+        <nav>
+            <ul class="recomendacoes__lista">
+                <li class="lista__item"><a href="#" class="lista__link">Sorvetes</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Açai</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Bebidas</a></li>
+                <li class="lista__item"><a href="#" class="lista__link">Combos</a></li>
+            </ul>
+        </nav>
+        <div class="recomendacoes__galeria">
+            <a href="#">
+                <img src="./src/img/image-galeria-1.png" alt="sorvete recomendado 01">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-2.png" alt="sorvete recomendado 02">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-3.png" alt="sorvete recomendado 03">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-4.png" alt="sorvete recomendado 04">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-5.png" alt="sorvete recomendado 05">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-6.png" alt="sorvete recomendado 06">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-7.png" alt="sorvete recomendado 07">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-8.png" alt="sorvete recomendado 08">
+            </a>
+            <a href="#">
+                <img src="./src/img/image-galeria-9.png" alt="sorvete recomendado 09">
+            </a>
+        </div>
+    </section>
+    <!-- carrossel -->
+    <script t9pe="text/javascript">
         $(document).ready(function () {
             $("#carousel-example-generic").on("slide.bs.carousel", function (event) {
                 $(".barra", this)
@@ -73,16 +112,19 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-        // const swiper = new Swiper('.swiper', {
-        //     speed: 400,
-        //     spaceBetween: 10,
-        //     slidesPerView: 1,
-        // });
         const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
             autoplay: {
                 delay: 5000,
+
             },
-        });
+        });        
     </script>
 </body>
 
