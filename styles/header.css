@@ -1,0 +1,54 @@
+.cabecalho {
+  background-color: var(--azul-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 1.5em;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.cabecalho__titulo {
+  color: var(--azul-bebe);
+  font-weight: 700;
+  font-size: 35px;
+}
+.nome-rosa {
+  font-family: "Rubik";
+  color: var(--rosa);
+}
+.nome-azul {
+  font-family: var(--font-principal);
+  color: var(--azul-bebe);
+}
+.cabecalho__menu {
+  display: flex;
+  padding: 1.5em;
+  gap: 1em;
+  margin: 0 1.5em;
+  align-items: center;
+}
+.cabecalho__item {
+  color: var(--branco);
+  text-decoration: none;
+  padding: 1em 1em;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "Rubik";
+}
+.info__usuario {
+  display: flex;
+  gap: 1em;
+  padding: 0.5em 2em;
+  align-items: center;
+}
+.info__usuario-nome .info__usuario-nome-item {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Rubik";
+  color: var(--branco);
+  border-bottom: 5px solid var(--rosa);
+  padding: 0 0.3em;
+  text-decoration: none;
+}

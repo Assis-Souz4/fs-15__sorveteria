@@ -1,0 +1,19 @@
+@import url(./styles/header.css);
+
+
+
+/* VARIAVEIS */
+:root{
+    /* COR */
+    --font-principal: font-family: 'Rubik';
+    --azul-dark:#01161E;
+    --branco:#fff;
+    --azul-bebe:#BDE0FE;
+    --rosa:#FFAFCC;
+    /* FONT */
+}
+body {
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+  }
