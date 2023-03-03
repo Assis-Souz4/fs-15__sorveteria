@@ -1,0 +1,42 @@
+.rodape {
+  background-color: var(--dark-blue);
+  margin-top: 4em;
+  padding: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rodape__titulo {
+  color: var(--branco);
+  font-family: "Rubik";
+  font-size: 16px;
+}
+.rodape__lista {
+  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 3rem;
+}
+.rodape__link {
+  color: var(--branco);
+  text-decoration: none;
+  align-items: start;
+
+
+}
+.rodape__item {
+  margin: 0 auto;
+  padding: 1em;
+  align-items: center;
+  display: block;
+  text-align: start;
+}
+.rodape__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
