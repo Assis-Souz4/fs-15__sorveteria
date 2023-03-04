@@ -1,7 +1,7 @@
 .recomendacoes__titulo {
   font-family: "rubik";
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   margin: 1em 0;
 }
@@ -13,7 +13,7 @@
   display: flex;
   font-family: "Rubik";
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   text-decoration: none;
   color: var(--azul);
   background-color: transparent;
@@ -37,9 +37,18 @@
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  margin-top: 3em;
+  margin: 3em 0;
+
 }
-.recomendacoes__galeria  img:hover{
-    /* transform: translate(5px, 12px); */
-    transform: scale(1.03);
+.recomendacoes__galeria img:hover {
+  /* transform: translate(5px, 12px); */
+  transform: scale(1.03);
+  margin-left: 0;
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+.recomendacoes__galeria img, a {
+    width: 200px;
+  
 }

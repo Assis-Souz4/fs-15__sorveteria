@@ -1,42 +1,49 @@
 .rodape {
   background-color: var(--dark-blue);
   margin-top: 4em;
-  padding: 4em 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  padding-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
 }
-.rodape__titulo {
+.rodape__contato {
   color: var(--branco);
   font-family: "Rubik";
-  font-size: 16px;
+  font-size: 12px;
+  margin-bottom: 2em;
+  border-bottom: 3px solid var(--rosa);
+  display: inline-block;
 }
-.rodape__lista {
-  font-family: "Rubik";
+.rodape__lista-item {
+    font-size: 12px;
   display: flex;
-  flex-direction: column;
   gap: 1em;
-  margin-top: 3rem;
+  margin-bottom: 1em;
+  align-items: center;
 }
-.rodape__link {
+.lista__item-link {
+  font-family: "Rubik";
   color: var(--branco);
   text-decoration: none;
-  align-items: start;
-
-
 }
-.rodape__item {
-  margin: 0 auto;
-  padding: 1em;
-  align-items: center;
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 48%;
+  position: relative;
+  height: 0;
   display: block;
-  text-align: start;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 60%;
+  width: 70%;
+  position: absolute;
 }
 .rodape__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
   margin: 0 auto;
-  align-items: center;
-  justify-content: space-evenly;
+}
+.rodape__lista-item > img{
+    width: 16px;
 }

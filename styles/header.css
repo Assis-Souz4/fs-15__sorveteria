@@ -8,11 +8,13 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 .cabecalho__titulo {
   color: var(--azul-bebe);
   font-weight: 700;
-  font-size: 35px;
+  font-size: 25px;
+  display: block;
 }
 .nome-rosa {
   font-family: "Rubik";
@@ -21,6 +23,7 @@
 .nome-azul {
   font-family: var(--font-principal);
   color: var(--azul-bebe);
+  display: block;
 }
 .cabecalho__menu {
   display: flex;
@@ -34,8 +37,9 @@
   text-decoration: none;
   padding: 1em 1em;
   font-weight: 700;
-  font-size: 25px;
+  font-size: normal;
   font-family: "Rubik";
+  border-radius: 20px;
 }
 .info__usuario {
   display: flex;
@@ -45,10 +49,13 @@
 }
 .info__usuario-nome .info__usuario-nome-item {
   font-weight: 700;
-  font-size: 30px;
+  font-size: normal;
   font-family: "Rubik";
   color: var(--branco);
   border-bottom: 5px solid var(--rosa);
   padding: 0 0.3em;
   text-decoration: none;
+}
+.cabecalho__item:hover{
+    color: var(--rosa);
 }
