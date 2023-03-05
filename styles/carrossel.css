@@ -26,11 +26,8 @@
   display: block;
   margin: 10px 0 0 0;
 }
-.swiper__static {
-  display: none;
-}
-@media screen and (max-width: 390px) {
-  .swiper__static {
-    display: block;
-  }
+@media screen and (max-width:390px){
+    .carrossel__container {
+        width: 100%;
+      }
 }

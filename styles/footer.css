@@ -15,7 +15,7 @@
   display: inline-block;
 }
 .rodape__lista-item {
-    font-size: 12px;
+  font-size: 12px;
   display: flex;
   gap: 1em;
   margin-bottom: 1em;
@@ -44,15 +44,39 @@
 .rodape__container {
   margin: 0 auto;
 }
-.rodape__lista-item > img{
-    width: 16px;
+.rodape__lista-item > img {
+  width: 16px;
 }
-.dev__web{
+.dev__web {
+  display: flex;
+  color: var(--branco);
+  font-family: "Rubik";
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 390px) {
+  .rodape {
     display: flex;
-    color: var(--branco);
-    font-family: "Rubik";
-    padding-bottom: 10px;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
-
+    text-align: center;
+    padding: 1em;
+  }
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 48%;
+    position: relative;
+    left: 20%;
+    height: 0;
+    width: 80%;
+    display: block;
+  }
+  .rodape__lista {
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-item: center;
+  }
 }

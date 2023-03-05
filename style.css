@@ -2,6 +2,7 @@
 @import url(./styles/carrossel.css);
 @import url(./styles/recomendacoes.css);
 @import url(./styles/footer.css);
+@import url(./js/carrossel__static.js);
 
 /* VARIAVEIS */
 :root{

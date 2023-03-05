@@ -62,8 +62,8 @@
 .container__botao {
   display: none;
 }
-.menu__hamburguer-lista{
-    display: none;
+.menu__hamburguer-lista {
+  display: none;
 }
 
 @media screen and (max-width: 390px) {
@@ -113,5 +113,35 @@
   }
   .hamburguer-lista__item {
     margin: 2em;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .info__usuario {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 0.5em 0;
+    align-items: center;
+    margin:0 1em 0 0;
+  }
+  .cabecalho__item {
+    display: block;
+  }
+  .cabecalho {
+    padding: 1.5em 0;
+  }
+  .cabecalho__menu {
+    gap: 0;
+    margin: 0;
+    display: flex;
+    padding: 1.5em 0 1.5em 2em;
+    align-items: center;
+  }
+  .cabecalho__logo{
+    width:100px
+  }
+  .img__usuario{
+    width:80%
   }
 }
