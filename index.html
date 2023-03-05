@@ -46,6 +46,7 @@
             </div>
         </div>
     </header>
+    <!-- CARROSSEL -->
     <section class="carrossel">
         <div class="carrossel__container">
             <!-- Slider main container -->
@@ -174,6 +175,14 @@
             autoplay: {
                 delay: 5000,
 
+            },
+        });
+        const swiperStatic = new SwiperStatic('.swiper__static', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
             },
         });        
     </script>

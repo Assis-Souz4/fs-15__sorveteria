@@ -18,11 +18,19 @@
 .swiper-scrollbar {
   display: none;
 }
-.swiper{
-    position: relative;
+.swiper {
+  position: relative;
 }
-.swiper-pagination{
+.swiper-pagination {
   position: relative;
   display: block;
   margin: 10px 0 0 0;
+}
+.swiper__static {
+  display: none;
+}
+@media screen and (max-width: 390px) {
+  .swiper__static {
+    display: block;
+  }
 }

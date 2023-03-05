@@ -62,6 +62,9 @@
 .container__botao {
   display: none;
 }
+.menu__hamburguer-lista{
+    display: none;
+}
 
 @media screen and (max-width: 390px) {
   .cabecalho {
