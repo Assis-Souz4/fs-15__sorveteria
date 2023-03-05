@@ -86,6 +86,6 @@
   .imagem__galeria-link,
   .imagem__galeria {
     display: block;
-    width: 120px;
+    width: 100px;
   }
 }
