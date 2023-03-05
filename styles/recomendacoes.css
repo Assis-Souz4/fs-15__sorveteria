@@ -68,6 +68,11 @@
     display: block;
     width: 100px;
   }
+  .recomendacoes__titulo{
+    font-size: 20px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
 }
 @media screen and (max-width: 860px) {
   .recomendacoes__lista {
