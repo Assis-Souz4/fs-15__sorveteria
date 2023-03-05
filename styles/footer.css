@@ -47,3 +47,12 @@
 .rodape__lista-item > img{
     width: 16px;
 }
+.dev__web{
+    display: flex;
+    color: var(--branco);
+    font-family: "Rubik";
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
