@@ -3,7 +3,7 @@
   margin-top: 4em;
   padding-top: 4em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
 }
 .rodape__contato {
@@ -35,7 +35,7 @@
 }
 
 .map-responsive iframe {
-  left: 0;
+  left: 100px;
   top: 0;
   height: 60%;
   width: 70%;
@@ -55,28 +55,43 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 390px) {
+/*############__________480px______________########################## */
+@media screen and (max-width: 480px) {
+  .map-responsive {
+    display: none;
+  }
+  .map-responsive iframe{
+    display: none;
+  }
+  .rodape {
+    grid-template-columns: 1fr;
+    height: 110px;
+  }
+  .rodape__lista-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* ############__________638px______________########################## */
+@media screen and (max-width: 638px) {
+  body {
+    max-width: 638px;
+  }
   .rodape {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
-    padding: 1em;
   }
   .map-responsive {
     overflow: hidden;
     padding-bottom: 48%;
     position: relative;
-    left: 20%;
     height: 0;
-    width: 80%;
     display: block;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .rodape__lista {
-    padding: 1em 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-item: center;
+  .rodape__container {
+    margin: 0 auto;
   }
 }

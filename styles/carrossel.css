@@ -26,8 +26,12 @@
   display: block;
   margin: 10px 0 0 0;
 }
-@media screen and (max-width:390px){
-    .carrossel__container {
+/*############__________480px______________########################## */
+@media screen and (max-width: 480px){
+    .swiper-slide img {
         width: 100%;
+    }
+    .carrossel__container {
+        width: 90%;
       }
 }
