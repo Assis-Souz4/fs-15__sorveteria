@@ -104,4 +104,15 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .lista__link{
+        display:block;
+        text-align:center
+      }
+      .recomendacoes__titulo{
+        justify-content: center;
+      }
+      .recomendacoes__lista{
+        gap: 0.5em;
+        justify-content: center;
+      }
 }
